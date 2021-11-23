@@ -1,0 +1,41 @@
+{
+  "name": "root",
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "packages/**"
+    ]
+  },
+  "scripts": {
+    "test": "lerna run test --stream",
+    "test:schema": "lerna run test --stream --scope @toolkit/schema",
+    "build": "lerna run build",
+    "build:schema": "lerna run build --scope @toolkit/schema",
+    "lint": "lerna run lint",
+    "format": "lerna run format"
+  },
+  "devDependencies": {
+    "@types/jest": "27.0.2",
+    "@types/node": "16.11.6",
+    "@typescript-eslint/eslint-plugin": "5.2.0",
+    "@typescript-eslint/parser": "5.2.0",
+    "eslint": "8.1.0",
+    "eslint-config-prettier": "8.3.0",
+    "eslint-plugin-prettier": "4.0.0",
+    "husky": "7.0.4",
+    "jest": "27.3.1",
+    "jest-config": "27.3.1",
+    "lerna": "4.0.0",
+    "prettier": "2.4.1",
+    "rimraf": "3.0.2",
+    "ts-jest": "27.0.7",
+    "typescript": "4.4.4"
+  },
+  "lint-staged": {
+    "*.{ts,tsx}": [
+      "yarn run lint",
+      "yarn run format",
+      "git add"
+    ]
+  }
+}
