@@ -1,0 +1,13 @@
+{
+  "$schema": "http://json-schema.org/draft/2021-12/schema",
+  "title": "Entity",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "number",
+      "description": "Id"
+    }
+  },
+  "required": ["id"],
+  "additionalProperties": false
+}

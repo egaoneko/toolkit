@@ -11,6 +11,9 @@
     "test:schema": "lerna run test --stream --scope @toolkit/schema",
     "build": "lerna run build",
     "build:schema": "lerna run build --scope @toolkit/schema",
+    "build:renderer": "lerna run build --scope @toolkit/renderer",
+    "build:editor": "lerna run build --scope @toolkit/editor",
+    "schema": "lerna run schema",
     "lint": "lerna run lint",
     "format": "lerna run format"
   },

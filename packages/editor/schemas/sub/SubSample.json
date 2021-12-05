@@ -1,0 +1,18 @@
+{
+  "$schema": "http://json-schema.org/draft/2021-12/schema",
+  "title": "SubSample",
+  "type": "object",
+  "extends": [
+    {
+      "$ref": "../Entity.json"
+    }
+  ],
+  "properties": {
+    "slug": {
+      "type": "string",
+      "description": "name"
+    }
+  },
+  "required": ["name"],
+  "additionalProperties": false
+}
