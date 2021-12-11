@@ -1,18 +1,17 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "title": "SubSample",
+  "title": "Element",
   "type": "object",
-  "extends": [
-    {
-      "$ref": "../Entity.json"
-    }
-  ],
   "properties": {
-    "slug": {
+    "id": {
       "type": "string",
-      "description": "name"
+      "description": "Id"
+    },
+    "key": {
+      "type": "string",
+      "description": "Key"
     }
   },
-  "required": ["name"],
+  "required": [],
   "additionalProperties": false
 }
