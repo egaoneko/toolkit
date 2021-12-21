@@ -1,9 +1,11 @@
 {
   "compilerOptions": {
-    "module": "commonjs",
-    "target": "ES6",
+    "target": "es5",
+    "module": "esnext",
+    "lib": ["dom", "dom.iterable", "esnext"],
     "strict": true,
     "declaration": true,
+    "allowJs": true,
     "removeComments": true,
     "moduleResolution": "node",
     "resolveJsonModule": true,
@@ -12,12 +14,12 @@
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
     "sourceMap": true,
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "jsx": "react-jsx"
   },
 
   "exclude": [
     "node_modules",
-    "lib",
     "dist",
     "**/*.test.ts"
   ]
