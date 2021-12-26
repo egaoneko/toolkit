@@ -1,0 +1,36 @@
+{
+  "name": "editor",
+  "version": "0.0.1",
+  "description": "editor",
+  "main": "dist/main",
+  "types": "dist/main",
+  "files": [
+    "dist"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "clean": "rimraf dist",
+    "start": "webpack-dev-server",
+    "prebuild": "yarn run clean",
+    "build": "webpack --config webpack.prod.js",
+    "serve": "serve dist -p 8001",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "lint": "eslint \"src/**/*.{js,ts}\" --fix",
+    "lint-style": "stylelint 'src/**/*.scss' --allow-empty-input --fix",
+    "format": "prettier --write \"src/**/*.ts\"",
+    "preschema": "rimraf ./src/schemas",
+    "schema": "node scripts/schema.js"
+  },
+  "dependencies": {
+    "@toolkit/layout": "0.0.1",
+    "@toolkit/navbar": "0.0.1",
+    "clsx": "1.1.1",
+    "react": "17.0.2",
+    "react-dom": "17.0.2"
+  },
+  "devDependencies": {
+    "@toolkit/schema": "0.0.1",
+    "@toolkit/config": "0.0.1"
+  }
+}

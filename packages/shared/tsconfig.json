@@ -2,9 +2,13 @@
   "extends": "../../tsconfig.json",
   "compilerOptions": {
     "baseUrl": ".",
-    "alwaysStrict": false,
-    "noImplicitUseStrict": true,
+    "outDir": "./dist",
+    "types": [],
+    "jsx": "react-jsx",
     "paths": {}
   },
-  "include": ["src/**/*"]
+  "include": [
+    "src/**/*",
+    "types.d.ts"
+  ]
 }

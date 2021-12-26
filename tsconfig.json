@@ -3,6 +3,7 @@
     "target": "es5",
     "module": "esnext",
     "lib": ["dom", "dom.iterable", "esnext"],
+    "types": ["@toolkit/shared"],
     "strict": true,
     "declaration": true,
     "allowJs": true,
@@ -15,12 +16,13 @@
     "emitDecoratorMetadata": true,
     "sourceMap": true,
     "skipLibCheck": true,
-    "jsx": "react-jsx"
+    "alwaysStrict": false,
+    "noImplicitUseStrict": true
   },
-
   "exclude": [
     "node_modules",
     "dist",
-    "**/*.test.ts"
+    "**/*.test.ts",
+    "**/*.stories.tsx"
   ]
 }

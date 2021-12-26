@@ -1,0 +1,29 @@
+{
+  "name": "@toolkit/config",
+  "version": "0.0.1",
+  "description": "config",
+  "main": "dist/index",
+  "types": "dist/index",
+  "files": [
+    "dist"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "clean": "rimraf dist",
+    "prebuild": "yarn run clean",
+    "build": "npm run compile",
+    "compile": "tsc --project tsconfig.json",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "lint": "eslint \"src/**/*.{js,ts}\" --fix",
+    "format": "prettier --write \"src/**/*.ts\""
+  },
+  "dependencies": {
+    "tailwindcss": "3.0.7",
+    "tinycolor2": "1.4.2"
+  },
+  "devDependencies": {
+    "@types/tailwindcss": "2.2.4",
+    "@types/tinycolor2": "1.4.3"
+  }
+}

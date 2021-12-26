@@ -1,0 +1,14 @@
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "outDir": "./dist",
+    "declaration": false,
+    "jsx": "react-jsx",
+    "lib": ["dom", "dom.iterable", "esnext"]
+  },
+  "include": [
+    "src/**/*",
+    "types.d.ts"
+  ]
+}

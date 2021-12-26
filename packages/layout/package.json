@@ -1,0 +1,36 @@
+{
+  "name": "@toolkit/layout",
+  "version": "0.0.1",
+  "description": "layout",
+  "main": "dist/index",
+  "types": "dist/index",
+  "files": [
+    "dist"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "clean": "rimraf dist",
+    "start": "webpack-dev-server",
+    "types": "tsc --emitDeclarationOnly",
+    "prebuild": "yarn run clean && yarn run types",
+    "build": "webpack --config webpack.prod.js",
+    "serve": "serve dist -p 3001",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "lint": "eslint \"src/**/*.{js,ts}\" --fix",
+    "lint-style": "stylelint 'src/**/*.scss' --allow-empty-input --fix",
+    "format": "prettier --write \"src/**/*.ts\"",
+    "preschema": "rimraf ./src/schemas",
+    "schema": "node scripts/schema.js"
+  },
+  "dependencies": {
+    "@toolkit/shared": "0.0.1",
+    "clsx": "1.1.1",
+    "react": "17.0.2",
+    "react-dom": "17.0.2"
+  },
+  "devDependencies": {
+    "@toolkit/schema": "0.0.1",
+    "@toolkit/config": "0.0.1"
+  }
+}

@@ -1,0 +1,225 @@
+.button {
+  @apply relative inline-flex items-center justify-center py-2.5 px-5 overflow-hidden;
+  @apply rounded-md hover:shadow-lg focus:outline-none;
+  @apply disabled:opacity-30 disabled:cursor-not-allowed;
+
+  &.small {
+    @apply text-sm;
+  }
+
+  &.default {
+    @apply text-base;
+  }
+
+  &.large {
+    @apply text-lg;
+  }
+
+  &.rounded {
+    @apply rounded-full;
+  }
+
+  &:not(:first-child) {
+    @apply ml-2;
+  }
+
+  &.group {
+    @apply ml-0 rounded-none;
+
+    &:first-child {
+      &.row {
+        @apply rounded-l-md;
+      }
+      &.column {
+        @apply rounded-t-md;
+      }
+    }
+
+    &:last-child {
+      &.row {
+        @apply rounded-r-md;
+      }
+      &.column {
+        @apply rounded-b-md;
+      }
+    }
+  }
+
+  & span.ripple {
+    @apply absolute w-full h-full;
+
+    & .effect {
+      @apply absolute rounded-[50%] bg-white animate-ripple;
+    }
+  }
+}
+
+.contained {
+  @apply text-white;
+
+  &.primary {
+    @apply bg-bgPrimaryDark hover:bg-bgPrimaryDarker;
+    @apply dark:bg-dark-bgPrimaryDark hover:dark:bg-dark-bgPrimaryDarker;
+  }
+
+  &.secondary {
+    @apply bg-bgSecondaryDark hover:bg-bgSecondaryDarker;
+    @apply dark:bg-dark-bgSecondaryDark hover:dark:bg-dark-bgSecondaryDarker;
+  }
+
+  &.success {
+    @apply bg-bgSuccessDark hover:bg-bgSuccessDarker;
+    @apply dark:bg-dark-bgSuccessDark hover:dark:bg-dark-bgSuccessDarker;
+  }
+
+  &.danger {
+    @apply bg-bgDangerDark hover:bg-bgDangerDarker;
+    @apply dark:bg-dark-bgDangerDark hover:dark:bg-dark-bgDangerDarker;
+  }
+
+  &.warning {
+    @apply bg-bgWarningDark hover:bg-bgWarningDarker;
+    @apply dark:bg-dark-bgWarningDark hover:dark:bg-dark-bgWarningDarker;
+  }
+
+  &.info {
+    @apply bg-bgInfoDark hover:bg-bgInfoDarker;
+    @apply dark:bg-dark-bgInfoDark hover:dark:bg-dark-bgInfoDarker;
+  }
+
+  &.relief {
+    @apply border-b-4;
+
+    &.primary {
+      @apply border-bgPrimaryDarker hover:bg-bgPrimary;
+      @apply dark:border-dark-bgPrimaryDarker hover:dark:bg-dark-bgPrimary;
+    }
+
+    &.secondary {
+      @apply border-bgSecondaryDarker hover:bg-bgSecondary;
+      @apply dark:border-dark-bgSecondaryDarker hover:bg-bgSecondary;
+    }
+
+    &.success {
+      @apply border-bgSuccessDarker hover:bg-bgSuccess;
+      @apply dark:border-dark-bgSuccessDarker hover:bg-bgSuccess;
+    }
+
+    &.danger {
+      @apply border-bgDangerDarker hover:bg-bgDanger;
+      @apply dark:border-dark-bgDangerDarker hover:bg-bgDanger;
+    }
+
+    &.warning {
+      @apply border-bgWarningDarker hover:bg-bgWarning;
+      @apply dark:border-dark-bgWarningDarker hover:bg-bgWarning;
+    }
+
+    &.info {
+      @apply border-bgInfoDarker hover:bg-bgInfo;
+      @apply dark:border-dark-bgInfoDarker hover:bg-bgInfo;
+    }
+  }
+
+  &.gradient {
+    @apply bg-gradient-to-r;
+
+    &.primary {
+      @apply from-bgPrimaryLight to-bgPrimaryDarker;
+      @apply dark:from-bgPrimaryLight dark:to-bgPrimaryDarker;
+    }
+
+    &.secondary {
+      @apply from-bgSecondaryLight to-bgSecondaryDarker;
+      @apply dark:from-bgSecondaryLight dark:to-bgSecondaryDarker;
+    }
+
+    &.success {
+      @apply from-bgSuccessLight to-bgSuccessDarker;
+      @apply dark:from-bgSuccessLight dark:to-bgSuccessDarker;
+    }
+
+    &.danger {
+      @apply from-bgDangerLight to-bgDangerDarker;
+      @apply dark:from-bgDangerLight dark:to-bgDangerDarker;
+    }
+
+    &.warning {
+      @apply from-bgWarningLight to-bgWarningDarker;
+      @apply dark:from-bgWarningLight dark:to-bgWarningDarker;
+    }
+
+    &.info {
+      @apply from-bgInfoLight to-bgInfoDarker;
+      @apply dark:from-bgInfoLight dark:to-bgInfoDarker;
+    }
+  }
+}
+
+.outlined {
+  @apply border;
+
+  &.primary {
+    @apply text-textPrimaryDarker border-bgPrimaryDarker hover:bg-bgPrimaryLighter/[.05];
+    @apply dark:text-dark-textPrimaryDarker dark:border-dark-bgPrimaryDarker hover:dark:bg-dark-bgPrimaryLighter/[.05];
+  }
+
+  &.secondary {
+    @apply text-textSecondaryDarker border-bgSecondaryDarker hover:bg-bgSecondaryLighter/[.05];
+    @apply dark:text-dark-textSecondaryDarker dark:border-dark-bgSecondaryDarker hover:dark:bg-dark-bgSecondaryLighter/[.05];
+  }
+
+  &.success {
+    @apply text-textSuccessDarker border-bgSuccessDarker hover:bg-bgSuccessLighter/[.05];
+    @apply dark:text-dark-textSuccessDarker dark:border-dark-bgSuccessDarker hover:dark:bg-dark-bgSuccessLighter/[.05];
+  }
+
+  &.danger {
+    @apply text-textDangerDarker border-bgDangerDarker hover:bg-bgDangerLighter/[.05];
+    @apply dark:text-dark-textDangerDarker dark:border-dark-bgDangerDarker hover:dark:bg-dark-bgDangerLighter/[.05];
+  }
+
+  &.warning {
+    @apply text-textWarningDarker border-bgWarningDarker hover:bg-bgWarningLighter/[.05];
+    @apply dark:text-dark-textWarningDarker dark:border-dark-bgWarningDarker hover:dark:bg-dark-bgWarningLighter/[.05];
+  }
+
+  &.info {
+    @apply text-textInfoDarker border-bgInfoDarker hover:bg-bgInfoLighter/[.05];
+    @apply dark:text-dark-textInfoDarker dark:border-dark-bgInfoDarker hover:dark:bg-dark-bgInfoLighter/[.05];
+  }
+}
+
+.text {
+  &.primary {
+    @apply text-textPrimaryDarker hover:bg-bgPrimaryLight/[.1];
+    @apply dark:text-dark-textPrimaryDarker hover:dark:bg-dark-bgPrimaryLight/[.1];
+  }
+
+  &.secondary {
+    @apply text-textSecondaryDarker hover:bg-bgSecondaryLight/[.1];
+    @apply dark:text-dark-textSecondaryDarker hover:dark:bg-dark-bgSecondaryLight/[.1];
+  }
+
+  &.success {
+    @apply text-textSuccessDarker hover:bg-bgSuccessLight/[.1];
+    @apply dark:text-dark-textSuccessDarker hover:dark:bg-dark-bgSuccessLight/[.1];
+  }
+
+  &.danger {
+    @apply text-textDangerDarker hover:bg-bgDangerLight/[.1];
+    @apply dark:text-dark-textDangerDarker hover:dark:bg-dark-bgDangerLight/[.1];
+
+  }
+
+  &.warning {
+    @apply text-textWarningDarker hover:bg-bgWarningLight/[.1];
+    @apply dark:text-dark-textWarningDarker hover:dark:bg-dark-bgWarningLight/[.1];
+  }
+
+  &.info {
+    @apply text-textInfoDarker hover:bg-bgInfoLight/[.1];
+    @apply dark:text-dark-textInfoDarker hover:dark:bg-dark-bgInfoLight/[.1];
+  }
+}
+

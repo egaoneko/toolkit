@@ -1,7 +1,9 @@
+import path from 'path';
+
 import $RefParser from '@apidevtools/json-schema-ref-parser';
 import { compile } from 'json-schema-to-typescript';
 import fs from 'fs-extra';
-import path from 'path';
+
 import type { JSONSchema4 } from 'json-schema';
 
 const { readdir } = fs.promises;
