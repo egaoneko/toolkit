@@ -23,7 +23,7 @@ export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
 
 const Button: FC<ButtonProps> = ({
   variant = ButtonVariant.CONTAINED,
-  size = Size.DEFAULT,
+  size = Size.MEDIUM,
   color = Color.PRIMARY,
   disabled = false,
   rounded = false,

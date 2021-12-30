@@ -27,7 +27,7 @@ const StandardTemplate: Story<ButtonProps> = args => (
 
 export const Standard = StandardTemplate.bind({});
 Standard.args = {
-  size: Size.DEFAULT,
+  size: Size.MEDIUM,
   color: Color.PRIMARY,
   disabled: false,
   rounded: false,

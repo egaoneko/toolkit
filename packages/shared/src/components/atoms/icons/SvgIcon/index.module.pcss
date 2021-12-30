@@ -1,0 +1,29 @@
+.svg {
+  &.small {
+    @apply text-sm;
+  }
+
+  &.medium {
+    @apply text-base;
+  }
+
+  &.large {
+    @apply text-lg;
+  }
+  
+  &.stroked {
+    @apply stroke-current;
+
+    *[stroke] {
+      @apply stroke-current;
+    }
+  }
+
+  &.filled {
+    @apply fill-current;
+
+    *[fill] {
+      @apply fill-current;
+    }
+  }
+}
