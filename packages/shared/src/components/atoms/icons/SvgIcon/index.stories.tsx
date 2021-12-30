@@ -1,8 +1,8 @@
 import { Story } from '@storybook/react';
 
-import SvgIcon, { SvgIconProps } from './index';
-
 import { Size } from '../../../../enums/size';
+
+import SvgIcon, { SvgIconProps } from './index';
 
 export default {
   title: 'atoms/icons/SvgIcon',

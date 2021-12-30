@@ -1,6 +1,7 @@
 module.exports = {
   extends: ['stylelint-config-standard'],
   rules: {
+    'max-line-length': null,
     'no-descending-specificity': null,
     'property-no-vendor-prefix': [
       true,

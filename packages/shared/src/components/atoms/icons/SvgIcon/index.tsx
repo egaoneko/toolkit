@@ -1,8 +1,9 @@
-import { SVGProps, FC, CSSProperties, SVGAttributes } from 'react';
+import { FC, SVGAttributes } from 'react';
 import clsx from 'clsx';
 
-import styles from './index.module.pcss';
 import { Size } from '../../../../enums/size';
+
+import styles from './index.module.pcss';
 
 export interface SvgIconProps extends SVGAttributes<SVGElement> {
   size?: Size;

@@ -20,7 +20,8 @@
     "lint-style": "lerna run lint-style",
     "format": "lerna run format",
     "storybook": "lerna run storybook",
-    "shared": "yarn workspace @toolkit/shared"
+    "shared": "yarn workspace @toolkit/shared",
+    "prepare": "husky install"
   },
   "devDependencies": {
     "@svgr/webpack": "6.1.2",
@@ -64,13 +65,5 @@
     "webpack": "5.65.0",
     "webpack-cli": "4.9.1",
     "webpack-dev-server": "4.7.1"
-  },
-  "lint-staged": {
-    "*.{ts,tsx}": [
-      "yarn run lint",
-      "yarn run lint-style",
-      "yarn run format",
-      "git add"
-    ]
   }
 }

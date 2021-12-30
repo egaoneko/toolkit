@@ -1,8 +1,8 @@
 import { Suspense } from 'react';
-
-import './styles/global.css';
 import VerticalNavbar from '@toolkit/navbar/dist/components/VerticalNavbar';
 import EditorLayout from '@toolkit/layout/dist/components/EditorLayout';
+
+import './styles/global.css';
 
 const App = () => (
   <div style={{ margin: '20px' }}>
