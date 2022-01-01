@@ -25,7 +25,7 @@ const SvgIcon: FC<SvgIconProps> = ({
   return (
     <svg
       {...rest}
-      className={clsx(styles.svg, styles[size], { [styles.stroked]: stroked }, { [styles.filled]: filled }, className)}
+      className={clsx(styles.svg, styles[size], { [styles.stroked]: stroked, [styles.filled]: filled }, className)}
       width="1em"
       height="1em"
       viewBox={viewBox}
