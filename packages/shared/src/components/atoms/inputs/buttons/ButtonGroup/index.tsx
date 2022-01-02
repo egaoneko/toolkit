@@ -1,8 +1,8 @@
 import { cloneElement, FC } from 'react';
 import clsx from 'clsx';
 
-import { ButtonGroupDirection } from '../../../../enums/button';
-import toChildrenArray from '../../../../utils/element';
+import { ButtonGroupDirection } from '../../../../../enums/button';
+import toChildrenArray from '../../../../../utils/element';
 import { ButtonProps } from '../Button';
 
 import styles from './index.module.pcss';
@@ -19,5 +19,7 @@ const ButtonGroup: FC<ButtonGroupProps> = ({ direction = ButtonGroupDirection.RO
 export default ButtonGroup;
 
 function renderButtons(children: React.ReactElement<ButtonProps>[], direction: ButtonGroupDirection): React.ReactNode {
-  return children.map(child => cloneElement(child, { ...child.props, group: true, groupDirection: direction }));
+  return children.map((child, index) =>
+    cloneElement(child, { key: `__buttons-${index}`, group: true, groupDirection: direction, ...child.props }),
+  );
 }

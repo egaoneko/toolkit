@@ -1,15 +1,15 @@
 import { Story } from '@storybook/react';
 
-import { Color } from '../../../../enums/color';
-import { ButtonVariant } from '../../../../enums/button';
-import { Size } from '../../../../enums/size';
-import SvgIcon from '../../icons/SvgIcon';
+import { Color } from '../../../../../enums/color';
+import { ButtonVariant } from '../../../../../enums/button';
+import { Size } from '../../../../../enums/size';
+import SvgIcon from '../../../displays/icons/SvgIcon';
 import { ButtonProps } from '../Button';
 
 import IconButton from './index';
 
 export default {
-  title: 'atoms/buttons/IconButton',
+  title: 'atoms/inputs/buttons/IconButton',
   component: IconButton,
 };
 

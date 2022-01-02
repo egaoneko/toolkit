@@ -4,7 +4,7 @@ import { useRef } from 'react';
 import Ripple, { RippleProps } from './index';
 
 export default {
-  title: 'atoms/effect/Ripple',
+  title: 'atoms/bases/effects/Ripple',
   component: Ripple,
 };
 
@@ -13,7 +13,7 @@ const StandardTemplate: Story<RippleProps> = args => {
   return (
     <div
       ref={parentRef}
-      className="relative overflow-hidden w-40 h-20 flex items-center justify-center bg-bgPrimaryDark"
+      className="relative overflow-hidden w-40 h-20 flex items-center justify-center bg-bgPrimaryDark select-none"
     >
       Ripple Parent
       <Ripple {...args} parentRef={parentRef} />

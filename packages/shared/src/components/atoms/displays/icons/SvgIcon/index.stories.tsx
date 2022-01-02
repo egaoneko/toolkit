@@ -1,11 +1,11 @@
 import { Story } from '@storybook/react';
 
-import { Size } from '../../../../enums/size';
+import { Size } from '../../../../../enums/size';
 
 import SvgIcon, { SvgIconProps } from './index';
 
 export default {
-  title: 'atoms/icons/SvgIcon',
+  title: 'atoms/displays/icons/SvgIcon',
   component: SvgIcon,
 };
 
