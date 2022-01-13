@@ -19,11 +19,11 @@
     "format": "prettier --write \"src/**/*.ts\""
   },
   "dependencies": {
-    "tailwindcss": "3.0.7",
+    "tailwindcss": "3.0.13",
     "tinycolor2": "1.4.2"
   },
   "devDependencies": {
-    "@types/tailwindcss": "2.2.4",
+    "@types/tailwindcss": "3.0.2",
     "@types/tinycolor2": "1.4.3"
   }
 }
