@@ -31,19 +31,18 @@
     "react-is": "17.0.2"
   },
   "devDependencies": {
-    "@babel/core": "7.16.7",
-    "@babel/preset-env": "7.16.8",
+    "@babel/core": "7.17.5",
+    "@babel/preset-env": "7.16.11",
     "@babel/preset-react": "7.16.7",
     "@babel/preset-typescript": "7.16.7",
-    "@storybook/addon-actions": "6.4.12",
-    "@storybook/addon-essentials": "6.4.12",
-    "@storybook/addon-links": "6.4.12",
-    "@storybook/builder-webpack5": "6.4.12",
+    "@storybook/addon-actions": "6.4.19",
+    "@storybook/addon-essentials": "6.4.19",
+    "@storybook/addon-links": "6.4.19",
+    "@storybook/builder-webpack5": "6.4.19",
     "@storybook/manager-webpack5": "6.5.0-alpha.5",
-    "@storybook/react": "6.4.12",
+    "@storybook/react": "6.4.19",
     "@toolkit/config": "0.0.1",
     "@toolkit/schema": "0.0.1",
-    "@types/react-is": "17.0.3",
-    "storybook-dark-mode": "1.0.8"
+    "@types/react-is": "17.0.3"
   }
 }

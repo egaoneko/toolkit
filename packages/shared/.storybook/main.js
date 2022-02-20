@@ -6,7 +6,7 @@ module.exports = {
     builder: 'webpack5',
   },
   stories: ['../src/**/*.stories.mdx', '../src/**/*.stories.@(js|jsx|ts|tsx)'],
-  addons: ['@storybook/addon-links', '@storybook/addon-actions', '@storybook/addon-essentials', 'storybook-dark-mode'],
+  addons: ['@storybook/addon-links', '@storybook/addon-actions', '@storybook/addon-essentials'],
   webpackFinal: async config => {
     // svg
     const fileLoaderRule = config.module.rules.find(rule => rule.test && rule.test.test('.svg'));
