@@ -37,6 +37,8 @@ module.exports = {
       ],
       include: path.resolve(__dirname, '../'),
     });
+
+    config.resolve.alias['src'] = path.resolve(process.cwd(), 'src');
     return config;
   },
 };

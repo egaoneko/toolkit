@@ -1,8 +1,13 @@
+const path = require('path');
+
 module.exports = {
   entry: './src/index.ts',
   mode: 'development',
   resolve: {
     extensions: ['.ts', '.tsx', '.js', '.css', 'scss'],
+    alias: {
+      src: path.resolve(process.cwd(), 'src'),
+    },
   },
   module: {
     rules: [

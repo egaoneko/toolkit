@@ -1,7 +1,7 @@
 import { FC } from 'react';
 import { Button } from '@toolkit/shared';
 
-import '../styles';
+import 'src/styles';
 
 const VerticalNavbar: FC = () => {
   return (

@@ -1,7 +1,7 @@
 import { FC, SVGAttributes } from 'react';
 import clsx from 'clsx';
 
-import { Size } from '../../../../../enums/size';
+import { Size } from 'src/enums/size';
 
 import styles from './index.module.css';
 

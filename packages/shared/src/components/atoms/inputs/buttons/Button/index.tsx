@@ -1,10 +1,10 @@
 import { ButtonHTMLAttributes, MouseEvent, FC, useCallback, useRef, ReactNode } from 'react';
 import clsx from 'clsx';
 
-import { Color } from '../../../../../enums/color';
-import { ButtonGroupDirection, ButtonVariant } from '../../../../../enums/button';
-import { Size } from '../../../../../enums/size';
-import Ripple from '../../../bases/effects/Ripple';
+import { Color } from 'src/enums/color';
+import { ButtonGroupDirection, ButtonVariant } from 'src/enums/button';
+import { Size } from 'src/enums/size';
+import Ripple from 'src/components/atoms/bases/effects/Ripple';
 
 import styles from './index.module.css';
 

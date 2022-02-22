@@ -1,9 +1,9 @@
 import { Story } from '@storybook/react';
 
-import { Color } from '../../../../../enums/color';
-import { ButtonVariant } from '../../../../../enums/button';
-import { Size } from '../../../../../enums/size';
-import SvgIcon from '../../../displays/icons/SvgIcon';
+import { Color } from 'src/enums/color';
+import { ButtonVariant } from 'src/enums/button';
+import { Size } from 'src/enums/size';
+import SvgIcon from 'src/components/atoms/displays/icons/SvgIcon';
 
 import Button, { ButtonProps } from './index';
 

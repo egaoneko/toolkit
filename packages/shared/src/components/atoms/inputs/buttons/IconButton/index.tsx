@@ -1,7 +1,7 @@
 import { FC } from 'react';
 import clsx from 'clsx';
 
-import Button, { ButtonProps } from '../Button';
+import Button, { ButtonProps } from 'src/components/atoms/inputs/buttons/Button';
 
 import styles from './index.module.css';
 

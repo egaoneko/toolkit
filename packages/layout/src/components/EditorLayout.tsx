@@ -1,6 +1,6 @@
 import { FC } from 'react';
 
-import '../styles';
+import 'src/styles';
 
 const EditorLayout: FC = ({ children }) => {
   return (

@@ -1,7 +1,7 @@
 import { Story } from '@storybook/react';
 
-import { ButtonGroupDirection } from '../../../../../enums/button';
-import Button from '../Button';
+import { ButtonGroupDirection } from 'src/enums/button';
+import Button from 'src/components/atoms/inputs/buttons/Button';
 
 import ButtonGroup, { ButtonGroupProps } from './index';
 

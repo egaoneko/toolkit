@@ -1,6 +1,6 @@
 import { Story } from '@storybook/react';
 
-import { Size } from '../../../../../enums/size';
+import { Size } from 'src/enums/size';
 
 import SvgIcon, { SvgIconProps } from './index';
 
