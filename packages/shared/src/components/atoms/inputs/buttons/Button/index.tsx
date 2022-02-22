@@ -6,7 +6,7 @@ import { ButtonGroupDirection, ButtonVariant } from '../../../../../enums/button
 import { Size } from '../../../../../enums/size';
 import Ripple from '../../../bases/effects/Ripple';
 
-import styles from './index.module.pcss';
+import styles from './index.module.css';
 
 export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   variant?: ButtonVariant;

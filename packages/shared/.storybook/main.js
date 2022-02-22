@@ -19,7 +19,7 @@ module.exports = {
     // tailwindcss
     config.module.rules = config.module.rules.filter(f => f.test.toString() !== '/\\.css$/');
     config.module.rules.push({
-      test: /\.p?css$/i,
+      test: /\.css$/i,
       use: [
         'style-loader',
         {

@@ -3,7 +3,7 @@ import clsx from 'clsx';
 
 import Button, { ButtonProps } from '../Button';
 
-import styles from './index.module.pcss';
+import styles from './index.module.css';
 
 const IconButton: FC<ButtonProps> = ({ className, children, ...props }) => {
   return (

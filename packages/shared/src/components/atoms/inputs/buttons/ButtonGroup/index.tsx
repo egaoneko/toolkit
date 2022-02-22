@@ -5,7 +5,7 @@ import { ButtonGroupDirection } from '../../../../../enums/button';
 import toChildrenArray from '../../../../../utils/element';
 import { ButtonProps } from '../Button';
 
-import styles from './index.module.pcss';
+import styles from './index.module.css';
 
 export interface ButtonGroupProps {
   direction?: ButtonGroupDirection;

@@ -1,6 +1,6 @@
 import { FC, useCallback, useRef, useEffect } from 'react';
 
-import styles from './index.module.pcss';
+import styles from './index.module.css';
 
 export interface RippleProps {
   parentRef?: React.RefObject<HTMLElement>;

@@ -3,7 +3,7 @@ import clsx from 'clsx';
 
 import { Size } from '../../../../../enums/size';
 
-import styles from './index.module.pcss';
+import styles from './index.module.css';
 
 export interface SvgIconProps extends SVGAttributes<SVGElement> {
   size?: Size;
