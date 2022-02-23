@@ -13,16 +13,17 @@ export default {
   component: IconButton,
 };
 
-const icon = (
-  <SvgIcon>
-    <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z" />
-  </SvgIcon>
-);
-const StandardTemplate: Story<ButtonProps> = args => (
-  <div className="flex gap-2">
-    <IconButton {...args}>{icon}</IconButton>
-  </div>
-);
+const StandardTemplate: Story<ButtonProps> = args => {
+  return (
+    <div className="flex gap-2">
+      <IconButton {...args}>
+        <SvgIcon size={args.size} color={args.color}>
+          <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z" />
+        </SvgIcon>
+      </IconButton>
+    </div>
+  );
+};
 
 export const Standard = StandardTemplate.bind({});
 Standard.args = {

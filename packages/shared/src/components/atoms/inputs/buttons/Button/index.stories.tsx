@@ -39,21 +39,24 @@ Standard.args = {
   rippleCenter: false,
 };
 
-const icon = (
-  <SvgIcon>
-    <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z" />
-  </SvgIcon>
-);
-const IconTemplate: Story<ButtonProps> = args => (
-  <div className="flex gap-2">
-    <Button {...args} startIcon={icon}>
-      Start
-    </Button>
-    <Button {...args} endIcon={icon}>
-      End
-    </Button>
-  </div>
-);
+const IconTemplate: Story<ButtonProps> = args => {
+  const icon = (
+    <SvgIcon size={args.size} color={args.color}>
+      <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z" />
+    </SvgIcon>
+  );
+
+  return (
+    <div className="flex gap-2">
+      <Button {...args} startIcon={icon}>
+        Start
+      </Button>
+      <Button {...args} endIcon={icon}>
+        End
+      </Button>
+    </div>
+  );
+};
 
 export const Icon = IconTemplate.bind({});
 Icon.args = {

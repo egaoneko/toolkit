@@ -1,0 +1,39 @@
+.container {
+  @apply w-full;
+
+  &.doubleExtraSmall {
+    @apply w-[320px];
+  }
+
+  &.extraSmall {
+    @apply w-[480px];
+  }
+
+  &.small {
+    @apply w-[640px];
+  }
+
+  &.medium {
+    @apply w-[768px];
+  }
+
+  &.large {
+    @apply w-[1024px];
+  }
+
+  &.extraLarge {
+    @apply w-[1280px];
+  }
+
+  &.doubleExtraLarge {
+    @apply w-[1536px];
+  }
+
+  &.rounded {
+    @apply rounded-lg;
+  }
+
+  &.shadow {
+    @apply shadow-lg;
+  }
+}

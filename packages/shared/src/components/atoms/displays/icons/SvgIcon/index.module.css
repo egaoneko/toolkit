@@ -1,4 +1,12 @@
 .svg {
+  &.doubleExtraSmall {
+    @apply text-xs;
+  }
+
+  &.extraSmall {
+    @apply text-sm;
+  }
+
   &.small {
     @apply text-lg;
   }
@@ -9,6 +17,14 @@
 
   &.large {
     @apply text-4xl;
+  }
+
+  &.extraLarge {
+    @apply text-6xl;
+  }
+
+  &.doubleExtraLarge {
+    @apply text-8xl;
   }
 
   &.stroked {

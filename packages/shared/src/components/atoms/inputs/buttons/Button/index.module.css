@@ -1,19 +1,35 @@
 .button {
-  @apply relative inline-flex items-center justify-center gap-1.5 py-2.5 px-5;
+  @apply relative inline-flex items-center justify-center;
   @apply box-border overflow-hidden select-none;
   @apply rounded-md hover:shadow-lg focus:outline-none;
   @apply disabled:opacity-30 disabled:cursor-not-allowed;
 
+  &.doubleExtraSmall {
+    @apply text-xs py-1.5 px-3 gap-1;
+  }
+
+  &.extraSmall {
+    @apply text-sm py-2 px-4 gap-1.5;
+  }
+
   &.small {
-    @apply text-sm;
+    @apply text-lg py-2.5 px-5 gap-2;
   }
 
   &.medium {
-    @apply text-base;
+    @apply text-2xl py-3 px-6 gap-2.5;
   }
 
   &.large {
-    @apply text-lg;
+    @apply text-4xl py-3.5 px-7 gap-3;
+  }
+
+  &.extraLarge {
+    @apply text-6xl py-4 px-8 gap-3.5;
+  }
+
+  &.doubleExtraLarge {
+    @apply text-8xl py-5 px-10 gap-4;
   }
 
   &.rounded {
