@@ -3,7 +3,7 @@
   "compilerOptions": {
     "baseUrl": ".",
     "outDir": "./dist",
-    "types": ["@toolkit/util"],
+    "types": [],
     "jsx": "react-jsx",
     "paths": {}
   },

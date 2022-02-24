@@ -1,7 +1,7 @@
 {
-  "name": "@toolkit/shared",
+  "name": "@toolkit/util",
   "version": "0.0.1",
-  "description": "shared",
+  "description": "util",
   "main": "dist/index",
   "types": "dist/index",
   "files": [
@@ -20,28 +20,14 @@
     "lint-style": "stylelint 'src/**/*.{css}' --allow-empty-input --fix",
     "format": "prettier --write \"src/**/*.{js,ts,jsx,tsx}\"",
     "preschema": "rimraf ./src/schemas",
-    "schema": "node scripts/schema.js",
-    "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "schema": "node scripts/schema.js"
   },
   "dependencies": {
-    "@toolkit/util": "0.0.1",
-    "clsx": "1.1.1",
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "react-is": "17.0.2"
   },
   "devDependencies": {
-    "@babel/core": "7.17.5",
-    "@babel/preset-env": "7.16.11",
-    "@babel/preset-react": "7.16.7",
-    "@babel/preset-typescript": "7.16.7",
-    "@storybook/addon-actions": "6.4.19",
-    "@storybook/addon-essentials": "6.4.19",
-    "@storybook/addon-links": "6.4.19",
-    "@storybook/builder-webpack5": "6.4.19",
-    "@storybook/manager-webpack5": "6.5.0-alpha.5",
-    "@storybook/react": "6.4.19",
     "@toolkit/config": "0.0.1",
     "@toolkit/schema": "0.0.1",
     "@types/react-is": "17.0.3"

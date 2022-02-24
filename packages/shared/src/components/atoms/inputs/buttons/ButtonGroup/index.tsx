@@ -1,8 +1,8 @@
 import { cloneElement, FC } from 'react';
 import clsx from 'clsx';
+import { toChildrenArray } from '@toolkit/util';
 
 import { ButtonGroupDirection } from 'src/enums/button';
-import toChildrenArray from 'src/utils/element';
 import { ButtonProps } from 'src/components/atoms/inputs/buttons/Button';
 
 import styles from './index.module.css';

@@ -1,3 +1,5 @@
+/// <reference types="@toolkit/util/types" />
+
 declare module '*.mdx';
 declare module '*.css';
 

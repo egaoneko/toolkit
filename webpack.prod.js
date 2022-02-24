@@ -2,7 +2,7 @@ const defaultConfig = require('./webpack.config');
 
 module.exports = {
   ...defaultConfig,
-  mode: 'production',
+  // mode: 'production',
   output: {
     libraryTarget: 'commonjs',
     filename: 'index.js',

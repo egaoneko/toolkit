@@ -3,7 +3,7 @@
     "target": "es5",
     "module": "esnext",
     "lib": ["dom", "dom.iterable", "esnext"],
-    "types": ["@toolkit/shared"],
+    "types": ["@toolkit/util", "@toolkit/shared"],
     "strict": true,
     "declaration": true,
     "allowJs": true,
