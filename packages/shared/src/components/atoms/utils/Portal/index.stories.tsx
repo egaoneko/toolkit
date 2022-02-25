@@ -1,10 +1,10 @@
 import { Story } from '@storybook/react';
-
-import Portal, { PortalProps } from './index';
 import { useEffect, useRef, useState } from 'react';
 
+import Portal, { PortalProps } from 'src/components/atoms/utils/Portal/index';
+
 export default {
-  title: 'atoms/bases/portal/Portal',
+  title: 'atoms/utils/Portal',
   component: Portal,
 };
 

@@ -22,7 +22,6 @@ const SvgIcon: FC<SvgIconProps> = ({
   children,
   ...rest
 }) => {
-  console.log(size);
   return (
     <svg
       className={clsx(styles.svg, styles[size], { [styles.stroked]: stroked, [styles.filled]: filled }, className)}
