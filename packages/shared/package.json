@@ -44,6 +44,7 @@
     "@storybook/react": "6.4.19",
     "@toolkit/config": "0.0.1",
     "@toolkit/schema": "0.0.1",
-    "@types/react-is": "17.0.3"
+    "@types/react-is": "17.0.3",
+    "storybook-dark-mode": "1.0.9"
   }
 }

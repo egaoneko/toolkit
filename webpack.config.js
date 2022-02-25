@@ -21,13 +21,18 @@ module.exports = {
         ],
       },
       {
-        test: /\.p?css$/i,
+        test: /\.css$/i,
         use: [
           'style-loader',
           {
             loader: 'css-loader',
             options: {
               importLoaders: 1,
+              modules: {
+                getLocalIdent: (_context, _localIdentName, localName) => {
+                  if (localName === 'dark') return 'dark';
+                },
+              },
             },
           },
           'postcss-loader',

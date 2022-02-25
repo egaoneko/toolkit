@@ -6,7 +6,7 @@ module.exports = {
     builder: 'webpack5',
   },
   stories: ['../src/**/*.stories.mdx', '../src/**/*.stories.@(js|jsx|ts|tsx)'],
-  addons: ['@storybook/addon-links', '@storybook/addon-actions', '@storybook/addon-essentials'],
+  addons: ['@storybook/addon-links', '@storybook/addon-actions', '@storybook/addon-essentials', 'storybook-dark-mode'],
   webpackFinal: async config => {
     // svg
     const fileLoaderRule = config.module.rules.find(rule => rule.test && rule.test.test('.svg'));
@@ -26,6 +26,11 @@ module.exports = {
           loader: 'css-loader',
           options: {
             importLoaders: 1,
+            modules: {
+              getLocalIdent: (_context, _localIdentName, localName) => {
+                if (localName === 'dark') return 'dark';
+              },
+            },
           },
         },
         {

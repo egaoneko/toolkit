@@ -1,4 +1,4 @@
-import { FC, HTMLAttributes } from 'react';
+import { forwardRef, HTMLAttributes } from 'react';
 import clsx from 'clsx';
 
 import { Size } from 'src/enums/size';
@@ -11,16 +11,13 @@ export interface ContainerProps extends HTMLAttributes<HTMLDivElement> {
   shadow?: boolean;
 }
 
-const Container: FC<ContainerProps> = ({
-  size = Size.MEDIUM,
-  rounded = false,
-  shadow = false,
-  className,
-  children,
-  ...rest
-}) => {
+const Container = forwardRef<HTMLDivElement, ContainerProps>(function Container(
+  { size = Size.SMALL, rounded = false, shadow = false, className, children, ...rest },
+  ref,
+) {
   return (
     <div
+      ref={ref}
       className={clsx(
         styles.container,
         styles[size],
@@ -35,6 +32,6 @@ const Container: FC<ContainerProps> = ({
       {children}
     </div>
   );
-};
+});
 
 export default Container;

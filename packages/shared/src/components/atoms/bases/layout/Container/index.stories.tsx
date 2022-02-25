@@ -18,7 +18,7 @@ const StandardTemplate: Story<ContainerProps> = args => (
 export const Standard = StandardTemplate.bind({});
 
 Standard.args = {
-  size: Size.MEDIUM,
-  rounded: false,
-  shadow: false,
+  size: Size.EXTRA_SMALL,
+  rounded: true,
+  shadow: true,
 };
