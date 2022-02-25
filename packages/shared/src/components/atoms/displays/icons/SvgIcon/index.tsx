@@ -1,11 +1,11 @@
-import { FC, SVGAttributes } from 'react';
+import { forwardRef, SVGAttributes } from 'react';
 import clsx from 'clsx';
 
 import { Size } from 'src/enums/size';
 
 import styles from './index.module.css';
 
-export interface SvgIconProps extends SVGAttributes<SVGElement> {
+export interface SvgIconProps extends SVGAttributes<SVGSVGElement> {
   size?: Size;
   stroked?: boolean;
   filled?: boolean;
@@ -13,17 +13,13 @@ export interface SvgIconProps extends SVGAttributes<SVGElement> {
   className?: string;
 }
 
-const SvgIcon: FC<SvgIconProps> = ({
-  size = Size.MEDIUM,
-  stroked = false,
-  filled = true,
-  viewBox = '0 0 24 24',
-  className,
-  children,
-  ...rest
-}) => {
+const SvgIcon = forwardRef<SVGSVGElement, SvgIconProps>(function SvgIcon(
+  { size = Size.MEDIUM, stroked = false, filled = true, viewBox = '0 0 24 24', className, children, ...rest },
+  ref,
+) {
   return (
     <svg
+      ref={ref}
       className={clsx(styles.svg, styles[size], { [styles.stroked]: stroked, [styles.filled]: filled }, className)}
       width="1em"
       height="1em"
@@ -33,6 +29,6 @@ const SvgIcon: FC<SvgIconProps> = ({
       {children}
     </svg>
   );
-};
+});
 
 export default SvgIcon;

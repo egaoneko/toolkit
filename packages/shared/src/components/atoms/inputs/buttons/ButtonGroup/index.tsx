@@ -1,4 +1,4 @@
-import { cloneElement, FC } from 'react';
+import { cloneElement, forwardRef } from 'react';
 import clsx from 'clsx';
 import { toChildrenArray } from '@toolkit/util';
 
@@ -11,10 +11,16 @@ export interface ButtonGroupProps {
   direction?: ButtonGroupDirection;
 }
 
-const ButtonGroup: FC<ButtonGroupProps> = ({ direction = ButtonGroupDirection.ROW, children }) => {
-  const buttons = toChildrenArray<ButtonProps>(children);
-  return <div className={clsx(styles.group, styles[direction])}>{renderButtons(buttons, direction)}</div>;
-};
+const ButtonGroup = forwardRef<HTMLDivElement, ButtonGroupProps>(function ButtonGroup(
+  { direction = ButtonGroupDirection.ROW, children },
+  ref,
+) {
+  return (
+    <div ref={ref} className={clsx(styles.group, styles[direction])}>
+      {renderButtons(toChildrenArray<ButtonProps>(children), direction)}
+    </div>
+  );
+});
 
 export default ButtonGroup;
 

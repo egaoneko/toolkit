@@ -1,5 +1,6 @@
-import { ButtonHTMLAttributes, MouseEvent, FC, useCallback, useRef, ReactNode } from 'react';
+import { ButtonHTMLAttributes, MouseEvent, useCallback, useRef, ReactNode, forwardRef } from 'react';
 import clsx from 'clsx';
+import { useForkRef } from '@toolkit/util';
 
 import { Color } from 'src/enums/color';
 import { ButtonGroupDirection, ButtonVariant } from 'src/enums/button';
@@ -26,27 +27,31 @@ export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   className?: string;
 }
 
-const Button: FC<ButtonProps> = ({
-  variant = ButtonVariant.CONTAINED,
-  size = Size.MEDIUM,
-  color = Color.PRIMARY,
-  disabled = false,
-  rounded = false,
-  popped = false,
-  gradient = false,
-  relief = false,
-  ripple = true,
-  rippleCenter = false,
-  group = false,
-  groupDirection = ButtonGroupDirection.ROW,
-  startIcon,
-  endIcon,
-  onClick,
-  className,
-  children,
-  ...props
-}) => {
+const Button = forwardRef<HTMLButtonElement, ButtonProps>(function Button(
+  {
+    variant = ButtonVariant.CONTAINED,
+    size = Size.MEDIUM,
+    color = Color.PRIMARY,
+    disabled = false,
+    rounded = false,
+    popped = false,
+    gradient = false,
+    relief = false,
+    ripple = true,
+    rippleCenter = false,
+    group = false,
+    groupDirection = ButtonGroupDirection.ROW,
+    startIcon,
+    endIcon,
+    onClick,
+    className,
+    children,
+    ...props
+  },
+  ref,
+) {
   const buttonRef = useRef<HTMLButtonElement>(null);
+  const handleRef = useForkRef(buttonRef, ref);
 
   const handleOnClick = useCallback(
     (event: MouseEvent<HTMLButtonElement>) => {
@@ -57,7 +62,7 @@ const Button: FC<ButtonProps> = ({
 
   return (
     <button
-      ref={buttonRef}
+      ref={handleRef}
       className={clsx(
         styles.button,
         styles[variant],
@@ -83,6 +88,6 @@ const Button: FC<ButtonProps> = ({
       {ripple && <Ripple parentRef={buttonRef} center={rippleCenter} />}
     </button>
   );
-};
+});
 
 export default Button;
