@@ -1,6 +1,7 @@
 import { Story } from '@storybook/react';
 
 import { Size } from 'src/enums/size';
+import styles from 'src/styles/storybook.css';
 
 import Container, { ContainerProps } from './index';
 
@@ -10,8 +11,8 @@ export default {
 };
 
 const StandardTemplate: Story<ContainerProps> = args => (
-  <div className="flex gap-2">
-    <Container className="h-[200px] bg-red-200" {...args} />
+  <div className={styles.col}>
+    <Container className={styles.box} {...args} />
   </div>
 );
 

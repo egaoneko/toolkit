@@ -31,5 +31,5 @@
 }
 
 .box {
-  @apply relative w-[200px] h-[200px] border border-red-500;
+  @apply relative w-[200px] h-[200px] bg-red-200 border border-red-500;
 }

@@ -11,6 +11,7 @@ export default {
 const StandardTemplate: Story = () => {
   return (
     <div className={styles.box}>
+      Box
       <Backdrop />
     </div>
   );
