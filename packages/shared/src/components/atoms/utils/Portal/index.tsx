@@ -1,11 +1,12 @@
 import { cloneElement, forwardRef, isValidElement, ReactElement, ReactNode, RefAttributes, useState } from 'react';
 import ReactDOM from 'react-dom';
-import { setRef, useEnhancedEffect, useForkRef } from '@toolkit/util';
+import { useIsomorphicLayoutEffect } from 'react-use';
+import { setRef, useForkRef } from '@toolkit/util';
 
 export interface PortalProps {
-  children?: ReactNode;
   container?: Element | (() => Element | null) | null;
   disablePortal?: boolean;
+  children?: ReactNode;
 }
 
 const Portal = forwardRef<Element, PortalProps>(function Portal(
@@ -15,13 +16,13 @@ const Portal = forwardRef<Element, PortalProps>(function Portal(
   const [mountNode, setMountNode] = useState<Element | null>(null);
   const handleRef = useForkRef(isValidElement(children) ? (children as RefAttributes<Element>).ref : null, ref);
 
-  useEnhancedEffect(() => {
+  useIsomorphicLayoutEffect(() => {
     if (!disablePortal) {
       setMountNode(getContainer(container) || document.body);
     }
   }, [container, disablePortal]);
 
-  useEnhancedEffect(() => {
+  useIsomorphicLayoutEffect(() => {
     if (mountNode && !disablePortal) {
       setRef(ref, mountNode);
       return () => {

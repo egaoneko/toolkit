@@ -1,3 +1,24 @@
+.root {
+  @apply fixed inset-0 z-modal;
+}
+
 .container {
-  @apply bg-white dark:bg-slate-900;
+  @apply absolute top-2/4 left-2/4 translate-x-[-50%] translate-y-[-50%];
+  @apply bg-white dark:bg-gray-800 z-auto;
+}
+
+.enter {
+  @apply opacity-0;
+}
+
+.enterActive {
+  @apply opacity-100 transition-opacity ease-in-out delay-[225];
+}
+
+.exit {
+  @apply opacity-100;
+}
+
+.exitActive {
+  @apply opacity-0 transition-opacity ease-in-out delay-[225];
 }

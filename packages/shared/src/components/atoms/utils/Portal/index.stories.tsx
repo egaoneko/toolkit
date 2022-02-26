@@ -2,15 +2,16 @@ import { Story } from '@storybook/react';
 import { useEffect, useRef, useState } from 'react';
 
 import Portal, { PortalProps } from 'src/components/atoms/utils/Portal/index';
+import styles from 'src/styles/storybook.css';
 
 export default {
   title: 'atoms/utils/Portal',
   component: Portal,
 };
 
-const BodyTemplate: Story<PortalProps> = () => {
+const BodyTemplate: Story<PortalProps> = args => {
   return (
-    <Portal>
+    <Portal {...args}>
       <span>Portal to Body</span>
     </Portal>
   );
@@ -18,7 +19,7 @@ const BodyTemplate: Story<PortalProps> = () => {
 
 export const Body = BodyTemplate.bind({});
 
-const ContainerTemplate: Story<PortalProps> = () => {
+const ContainerTemplate: Story<PortalProps> = args => {
   const ref = useRef<HTMLDivElement>(null);
   const [mounted, setMounted] = useState<boolean>(false);
   useEffect(() => {
@@ -26,12 +27,12 @@ const ContainerTemplate: Story<PortalProps> = () => {
   }, [ref]);
   return (
     <>
-      <div className="flex flex-col gap-2">
+      <div className={styles.col}>
         Target
-        <div className="w-[200px] border border-red-500" ref={ref} />
+        <div className={styles.box} ref={ref} />
       </div>
       {mounted && (
-        <Portal container={ref.current}>
+        <Portal {...args} container={ref.current}>
           <span>Portal to Container</span>
         </Portal>
       )}

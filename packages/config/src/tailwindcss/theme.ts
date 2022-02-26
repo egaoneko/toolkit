@@ -14,6 +14,9 @@ const theme = {
         ...generateColorSetTheme('dark'),
       },
     },
+    zIndex: {
+      modal: 1300,
+    },
     keyframes: {
       ripple: {
         from: {

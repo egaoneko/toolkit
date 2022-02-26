@@ -29,7 +29,6 @@
   },
   "devDependencies": {
     "@toolkit/config": "0.0.1",
-    "@toolkit/schema": "0.0.1",
-    "@types/react-is": "17.0.3"
+    "@toolkit/schema": "0.0.1"
   }
 }

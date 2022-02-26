@@ -4,6 +4,7 @@ import { Color } from 'src/enums/color';
 import { ButtonVariant } from 'src/enums/button';
 import { Size } from 'src/enums/size';
 import SvgIcon from 'src/components/atoms/displays/icons/SvgIcon';
+import styles from 'src/styles/storybook.css';
 
 import Button, { ButtonProps } from './index';
 
@@ -13,7 +14,7 @@ export default {
 };
 
 const StandardTemplate: Story<ButtonProps> = args => (
-  <div className="flex gap-2">
+  <div className={styles.row}>
     <Button {...args} variant={ButtonVariant.CONTAINED}>
       Contained
     </Button>
@@ -47,7 +48,7 @@ const IconTemplate: Story<ButtonProps> = args => {
   );
 
   return (
-    <div className="flex gap-2">
+    <div className={styles.row}>
       <Button {...args} startIcon={icon}>
         Start
       </Button>

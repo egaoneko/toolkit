@@ -27,8 +27,8 @@ module.exports = {
           options: {
             importLoaders: 1,
             modules: {
-              getLocalIdent: (_context, _localIdentName, localName) => {
-                if (localName === 'dark') return 'dark';
+              getLocalIdent: (context, localIdentName, localName) => {
+                if (localName === 'dark') return localName;
               },
             },
           },

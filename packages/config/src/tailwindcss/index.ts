@@ -3,7 +3,7 @@ import theme from './theme';
 export default {
   darkMode: 'class',
   content: {
-    content: ['./src/**/*.{tsx,scss}'],
+    content: ['./src/**/*.{tsx,css}'],
   },
   variants: {
     extend: {

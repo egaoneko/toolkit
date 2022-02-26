@@ -1,0 +1,35 @@
+.row {
+  @apply flex gap-2;
+}
+
+.col {
+  @apply flex flex-col gap-2;
+}
+
+.primary {
+  @apply text-textPrimary;
+}
+
+.secondary {
+  @apply text-textSecondary;
+}
+
+.success {
+  @apply text-textSuccess;
+}
+
+.danger {
+  @apply text-textDanger;
+}
+
+.warning {
+  @apply text-textWarning;
+}
+
+.info {
+  @apply text-textInfo;
+}
+
+.box {
+  @apply relative w-[200px] h-[200px] border border-red-500;
+}
