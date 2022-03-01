@@ -6,9 +6,5 @@
     "declaration": false,
     "jsx": "react-jsx",
     "lib": ["dom", "dom.iterable", "esnext"]
-  },
-  "include": [
-    "src/**/*",
-    "src/types.d.ts"
-  ]
+  }
 }

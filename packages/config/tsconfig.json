@@ -5,8 +5,5 @@
     "outDir": "./dist",
     "lib": ["dom", "dom.iterable", "esnext"],
     "module": "CommonJS"
-  },
-  "include": [
-    "src/**/*"
-  ]
+  }
 }

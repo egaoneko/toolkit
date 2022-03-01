@@ -6,9 +6,5 @@
     "types": ["@toolkit/util"],
     "jsx": "react-jsx",
     "paths": {}
-  },
-  "include": [
-    "src/**/*",
-    "src/types.d.ts"
-  ]
+  }
 }
