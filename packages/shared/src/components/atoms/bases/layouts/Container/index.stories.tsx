@@ -6,7 +6,7 @@ import styles from 'src/styles/storybook.css';
 import Container, { ContainerProps } from './index';
 
 export default {
-  title: 'atoms/bases/layout/Container',
+  title: 'atoms/bases/layouts/Container',
   component: Container,
 };
 

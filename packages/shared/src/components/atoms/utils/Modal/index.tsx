@@ -4,7 +4,7 @@ import { useToggle, useClickAway, useUnmount } from 'react-use';
 import { useForkRef } from '@toolkit/util';
 
 import Portal from 'src/components/atoms/utils/Portal';
-import Container, { ContainerProps } from 'src/components/atoms/bases/layout/Container';
+import Container, { ContainerProps } from 'src/components/atoms/bases/layouts/Container';
 import { Size } from 'src/enums';
 import DefaultBackdrop, { BackdropProps } from 'src/components/atoms/utils/Backdrop';
 
