@@ -4,7 +4,7 @@ import { ReactNode, ReactPortal } from 'react';
 
 import Portal from 'src/components/atoms/utils/Portal/index';
 
-describe('Portal Snapshots', () => {
+describe('Portal', () => {
   let portalContainer: Element | null = null;
   beforeAll(() => {
     ReactDOM.createPortal = jest.fn((children: ReactNode, container: Element) => {
@@ -18,7 +18,7 @@ describe('Portal Snapshots', () => {
     (ReactDOM.createPortal as jest.Mock).mockClear();
   });
 
-  test('renders portal with default options', async () => {
+  test('renders Portal with default options', async () => {
     const tree = renderer.create(
       <Portal>
         <div>Test</div>
@@ -30,7 +30,7 @@ describe('Portal Snapshots', () => {
     });
   });
 
-  test('renders portal with container', async () => {
+  test('renders Portal with container', async () => {
     const container = document.createElement('div');
     const tree = renderer.create(
       <Portal container={container}>
@@ -44,7 +44,7 @@ describe('Portal Snapshots', () => {
     });
   });
 
-  test('renders portal with disablePortal', async () => {
+  test('renders Portal with disablePortal', async () => {
     const tree = renderer.create(
       <Portal disablePortal>
         <div>Test</div>

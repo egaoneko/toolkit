@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Backdrop Snapshots renders Backdrop class 1`] = `
+<div
+  className="container test"
+/>
+`;
+
+exports[`Backdrop Snapshots renders Backdrop with default options 1`] = `
+<div
+  className="container"
+/>
+`;
