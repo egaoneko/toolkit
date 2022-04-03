@@ -1,6 +1,8 @@
 import { Story } from '@storybook/react';
 import { useRef } from 'react';
 
+import styles from 'src/styles/storybook.css';
+
 import Ripple, { RippleProps } from './index';
 
 export default {
@@ -11,10 +13,7 @@ export default {
 const StandardTemplate: Story<RippleProps> = args => {
   const parentRef = useRef<HTMLDivElement>(null);
   return (
-    <div
-      ref={parentRef}
-      className="relative overflow-hidden w-40 h-20 flex items-center justify-center bg-bgPrimaryDark select-none"
-    >
+    <div ref={parentRef} className={styles.box}>
       Ripple Parent
       <Ripple {...args} parentRef={parentRef} />
     </div>

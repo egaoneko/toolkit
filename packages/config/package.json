@@ -23,7 +23,7 @@
     "tinycolor2": "1.4.2"
   },
   "devDependencies": {
-    "@types/tailwindcss": "3.0.9",
+    "@types/tailwindcss": "3.0.10",
     "@types/tinycolor2": "1.4.3"
   }
 }

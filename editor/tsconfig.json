@@ -5,6 +5,7 @@
     "outDir": "./dist",
     "declaration": false,
     "jsx": "react-jsx",
-    "lib": ["dom", "dom.iterable", "esnext"]
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "paths": {}
   }
 }

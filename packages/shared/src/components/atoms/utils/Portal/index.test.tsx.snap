@@ -1,18 +1,18 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Portal Snapshots renders portal with container 1`] = `
+exports[`Portal renders Portal with container 1`] = `
 <div>
   Test
 </div>
 `;
 
-exports[`Portal Snapshots renders portal with default options 1`] = `
+exports[`Portal renders Portal with default options 1`] = `
 <div>
   Test
 </div>
 `;
 
-exports[`Portal Snapshots renders portal with disablePortal 1`] = `
+exports[`Portal renders Portal with disablePortal 1`] = `
 <div>
   Test
 </div>
