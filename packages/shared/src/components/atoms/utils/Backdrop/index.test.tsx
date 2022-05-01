@@ -8,7 +8,7 @@ describe('Backdrop Snapshots', () => {
     expect(tree.toJSON()).toMatchSnapshot();
   });
 
-  test('renders Backdrop class', async () => {
+  test('renders Backdrop with class', async () => {
     const tree = renderer.create(<Backdrop className="test" />);
     expect(tree.toJSON()).toMatchSnapshot();
     expect(tree.toTree()?.props.className).toContain('test');

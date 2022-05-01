@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Modal Snapshots renders Modal with default options 1`] = `
+<div
+  className="root"
+>
+  <div
+    className="container"
+  />
+  <div
+    className="container extraSmall rounded shadow container"
+  >
+    <span>
+      Modal
+    </span>
+  </div>
+</div>
+`;

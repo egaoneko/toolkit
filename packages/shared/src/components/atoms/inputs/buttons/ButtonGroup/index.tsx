@@ -1,4 +1,4 @@
-import { cloneElement, forwardRef } from 'react';
+import { cloneElement, forwardRef, ReactNode } from 'react';
 import clsx from 'clsx';
 import { toChildrenArray } from '@toolkit/util';
 
@@ -9,6 +9,7 @@ import styles from './index.module.css';
 
 export interface ButtonGroupProps {
   direction?: ButtonGroupDirection;
+  children?: ReactNode;
 }
 
 const ButtonGroup = forwardRef<HTMLDivElement, ButtonGroupProps>(function ButtonGroup(

@@ -72,9 +72,9 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(function Button(
           [styles.rounded]: rounded,
           [styles.gradient]: gradient,
           [styles.relief]: relief,
+          [styles.popped]: !group && popped,
           [styles.group]: group,
           [styles[groupDirection]]: group,
-          ['transform hover:scale-110']: !group && (popped || gradient),
         },
         className,
       )}

@@ -1,0 +1,271 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button Snapshots renders Button with class 1`] = `
+<button
+  className="button contained medium primary test"
+  disabled={false}
+  onClick={[Function]}
+>
+  <div>
+    Test
+  </div>
+  <span
+    className="ripple"
+  />
+</button>
+`;
+
+exports[`Button Snapshots renders Button with color 1`] = `
+<button
+  className="button contained medium secondary"
+  disabled={false}
+  onClick={[Function]}
+>
+  <div>
+    Test
+  </div>
+  <span
+    className="ripple"
+  />
+</button>
+`;
+
+exports[`Button Snapshots renders Button with default options 1`] = `
+<button
+  className="button contained medium primary"
+  disabled={false}
+  onClick={[Function]}
+>
+  <div>
+    Test
+  </div>
+  <span
+    className="ripple"
+  />
+</button>
+`;
+
+exports[`Button Snapshots renders Button with endIcon 1`] = `
+<button
+  className="button contained medium primary"
+  disabled={false}
+  onClick={[Function]}
+>
+  <div>
+    Test
+  </div>
+  <span>
+    <svg
+      className="svg medium filled"
+      height="1em"
+      viewBox="0 0 24 24"
+      width="1em"
+    >
+      <path
+        d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"
+      />
+    </svg>
+  </span>
+  <span
+    className="ripple"
+  />
+</button>
+`;
+
+exports[`Button Snapshots renders Button with gradient 1`] = `
+<button
+  className="button contained medium primary gradient"
+  disabled={false}
+  onClick={[Function]}
+>
+  <div>
+    Test
+  </div>
+  <span
+    className="ripple"
+  />
+</button>
+`;
+
+exports[`Button Snapshots renders Button with group 1`] = `
+<button
+  className="button contained medium primary group row"
+  disabled={false}
+  onClick={[Function]}
+>
+  <div>
+    Test
+  </div>
+  <span
+    className="ripple"
+  />
+</button>
+`;
+
+exports[`Button Snapshots renders Button with group column 1`] = `
+<button
+  className="button contained medium primary group column"
+  disabled={false}
+  onClick={[Function]}
+>
+  <div>
+    Test
+  </div>
+  <span
+    className="ripple"
+  />
+</button>
+`;
+
+exports[`Button Snapshots renders Button with icons 1`] = `
+<button
+  className="button contained medium primary"
+  disabled={false}
+  onClick={[Function]}
+>
+  <span>
+    <svg
+      className="svg medium filled"
+      height="1em"
+      viewBox="0 0 24 24"
+      width="1em"
+    >
+      <path
+        d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"
+      />
+    </svg>
+  </span>
+  <div>
+    Test
+  </div>
+  <span>
+    <svg
+      className="svg medium filled"
+      height="1em"
+      viewBox="0 0 24 24"
+      width="1em"
+    >
+      <path
+        d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"
+      />
+    </svg>
+  </span>
+  <span
+    className="ripple"
+  />
+</button>
+`;
+
+exports[`Button Snapshots renders Button with popped 1`] = `
+<button
+  className="button contained medium primary popped"
+  disabled={false}
+  onClick={[Function]}
+>
+  <div>
+    Test
+  </div>
+  <span
+    className="ripple"
+  />
+</button>
+`;
+
+exports[`Button Snapshots renders Button with relief 1`] = `
+<button
+  className="button contained medium primary relief"
+  disabled={false}
+  onClick={[Function]}
+>
+  <div>
+    Test
+  </div>
+  <span
+    className="ripple"
+  />
+</button>
+`;
+
+exports[`Button Snapshots renders Button with rounded 1`] = `
+<button
+  className="button contained medium primary rounded"
+  disabled={false}
+  onClick={[Function]}
+>
+  <div>
+    Test
+  </div>
+  <span
+    className="ripple"
+  />
+</button>
+`;
+
+exports[`Button Snapshots renders Button with size 1`] = `
+<button
+  className="button contained small primary"
+  disabled={false}
+  onClick={[Function]}
+>
+  <div>
+    Test
+  </div>
+  <span
+    className="ripple"
+  />
+</button>
+`;
+
+exports[`Button Snapshots renders Button with startIcon 1`] = `
+<button
+  className="button contained medium primary"
+  disabled={false}
+  onClick={[Function]}
+>
+  <span>
+    <svg
+      className="svg medium filled"
+      height="1em"
+      viewBox="0 0 24 24"
+      width="1em"
+    >
+      <path
+        d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"
+      />
+    </svg>
+  </span>
+  <div>
+    Test
+  </div>
+  <span
+    className="ripple"
+  />
+</button>
+`;
+
+exports[`Button Snapshots renders Button with variant 1`] = `
+<button
+  className="button text medium primary"
+  disabled={false}
+  onClick={[Function]}
+>
+  <div>
+    Test
+  </div>
+  <span
+    className="ripple"
+  />
+</button>
+`;
+
+exports[`Button Snapshots renders Button without ripple 1`] = `
+<button
+  className="button contained medium primary"
+  disabled={false}
+  onClick={[Function]}
+>
+  <div>
+    Test
+  </div>
+</button>
+`;

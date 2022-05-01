@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Backdrop Snapshots renders Backdrop class 1`] = `
+exports[`Backdrop Snapshots renders Backdrop with class 1`] = `
 <div
   className="container test"
 />

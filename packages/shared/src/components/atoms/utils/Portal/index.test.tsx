@@ -1,4 +1,4 @@
-import renderer from 'react-test-renderer';
+import renderer, { ReactTestInstance } from 'react-test-renderer';
 import ReactDOM from 'react-dom';
 import { ReactNode, ReactPortal } from 'react';
 
@@ -27,6 +27,7 @@ describe('Portal', () => {
     await renderer.act(async () => {
       expect(tree.toJSON()).toMatchSnapshot();
       expect(portalContainer).toBe(document.body);
+      expect((tree.root.children[0] as ReactTestInstance).children[0]).toBe('Test');
     });
   });
 

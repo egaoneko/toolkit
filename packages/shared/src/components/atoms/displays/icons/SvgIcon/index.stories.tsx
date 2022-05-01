@@ -10,40 +10,31 @@ export default {
   component: SvgIcon,
 };
 
-const StandardTemplate: Story<SvgIconProps> = args => (
-  <div className={styles.row}>
-    <div className={styles.primary}>
-      <SvgIcon {...args}>
-        <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z" />
-      </SvgIcon>
+const StandardTemplate: Story<SvgIconProps> = args => {
+  const icon = <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z" />;
+  return (
+    <div className={styles.row}>
+      <div className={styles.primary}>
+        <SvgIcon {...args}>{icon}</SvgIcon>
+      </div>
+      <div className={styles.secondary}>
+        <SvgIcon {...args}>{icon}</SvgIcon>
+      </div>
+      <div className={styles.success}>
+        <SvgIcon {...args}>{icon}</SvgIcon>
+      </div>
+      <div className={styles.danger}>
+        <SvgIcon {...args}>{icon}</SvgIcon>
+      </div>
+      <div className={styles.warning}>
+        <SvgIcon {...args}>{icon}</SvgIcon>
+      </div>
+      <div className={styles.info}>
+        <SvgIcon {...args}>{icon}</SvgIcon>
+      </div>
     </div>
-    <div className={styles.secondary}>
-      <SvgIcon {...args}>
-        <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z" />
-      </SvgIcon>
-    </div>
-    <div className={styles.success}>
-      <SvgIcon {...args}>
-        <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z" />
-      </SvgIcon>
-    </div>
-    <div className={styles.danger}>
-      <SvgIcon {...args}>
-        <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z" />
-      </SvgIcon>
-    </div>
-    <div className={styles.warning}>
-      <SvgIcon {...args}>
-        <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z" />
-      </SvgIcon>
-    </div>
-    <div className={styles.info}>
-      <SvgIcon {...args}>
-        <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z" />
-      </SvgIcon>
-    </div>
-  </div>
-);
+  );
+};
 
 export const Standard = StandardTemplate.bind({});
 

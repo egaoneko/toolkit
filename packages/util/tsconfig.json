@@ -3,7 +3,7 @@
   "compilerOptions": {
     "baseUrl": ".",
     "outDir": "./dist",
-    "types": [],
+    "types": ["jest"],
     "jsx": "react-jsx",
     "paths": {}
   }

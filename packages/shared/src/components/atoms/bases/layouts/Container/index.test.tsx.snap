@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Container Snapshots renders Container with class 1`] = `
+<div
+  className="container small test"
+>
+  <div>
+    Test
+  </div>
+</div>
+`;
+
+exports[`Container Snapshots renders Container with default options 1`] = `
+<div
+  className="container small"
+>
+  <div>
+    Test
+  </div>
+</div>
+`;
+
+exports[`Container Snapshots renders Container with rounded 1`] = `
+<div
+  className="container small rounded"
+>
+  <div>
+    Test
+  </div>
+</div>
+`;
+
+exports[`Container Snapshots renders Container with shadow 1`] = `
+<div
+  className="container small shadow"
+>
+  <div>
+    Test
+  </div>
+</div>
+`;
+
+exports[`Container Snapshots renders Container with size 1`] = `
+<div
+  className="container medium"
+>
+  <div>
+    Test
+  </div>
+</div>
+`;

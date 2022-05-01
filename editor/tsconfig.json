@@ -6,6 +6,7 @@
     "declaration": false,
     "jsx": "react-jsx",
     "lib": ["dom", "dom.iterable", "esnext"],
+    "types": ["jest"],
     "paths": {}
   }
 }

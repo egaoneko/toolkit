@@ -36,6 +36,10 @@
     @apply rounded-full;
   }
 
+  &.popped {
+    @apply transform hover:scale-110;
+  }
+
   &:not(:first-child) {
     @apply ml-2;
   }

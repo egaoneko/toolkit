@@ -4,6 +4,7 @@
     "baseUrl": ".",
     "outDir": "./dist",
     "lib": ["dom", "dom.iterable", "esnext"],
+    "types": ["jest"],
     "module": "CommonJS",
     "paths": {}
   }

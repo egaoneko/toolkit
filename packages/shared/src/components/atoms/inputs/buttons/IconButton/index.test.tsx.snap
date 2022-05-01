@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`IconButton Snapshots renders IconButton with class 1`] = `
+<button
+  className="button contained medium primary button test"
+  disabled={false}
+  onClick={[Function]}
+>
+  <svg
+    className="svg medium filled"
+    height="1em"
+    viewBox="0 0 24 24"
+    width="1em"
+  >
+    <path
+      d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"
+    />
+  </svg>
+  <span
+    className="ripple"
+  />
+</button>
+`;
+
+exports[`IconButton Snapshots renders IconButton with default options 1`] = `
+<button
+  className="button contained medium primary button"
+  disabled={false}
+  onClick={[Function]}
+>
+  <svg
+    className="svg medium filled"
+    height="1em"
+    viewBox="0 0 24 24"
+    width="1em"
+  >
+    <path
+      d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"
+    />
+  </svg>
+  <span
+    className="ripple"
+  />
+</button>
+`;

@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ButtonGroup Snapshots renders ButtonGroup with column 1`] = `
+<div
+  className="group column"
+>
+  <button
+    className="button contained medium primary group column"
+    disabled={false}
+    onClick={[Function]}
+  >
+    Test1
+    <span
+      className="ripple"
+    />
+  </button>
+  <button
+    className="button contained medium primary group column"
+    disabled={false}
+    onClick={[Function]}
+  >
+    Test2
+    <span
+      className="ripple"
+    />
+  </button>
+</div>
+`;
+
+exports[`ButtonGroup Snapshots renders ButtonGroup with default options 1`] = `
+<div
+  className="group row"
+>
+  <button
+    className="button contained medium primary group row"
+    disabled={false}
+    onClick={[Function]}
+  >
+    Test1
+    <span
+      className="ripple"
+    />
+  </button>
+  <button
+    className="button contained medium primary group row"
+    disabled={false}
+    onClick={[Function]}
+  >
+    Test2
+    <span
+      className="ripple"
+    />
+  </button>
+</div>
+`;
