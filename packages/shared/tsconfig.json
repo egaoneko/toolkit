@@ -6,5 +6,10 @@
     "types": ["jest", "@toolkit/util"],
     "jsx": "react-jsx",
     "paths": {}
-  }
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "src/types.d.ts"
+  ]
 }

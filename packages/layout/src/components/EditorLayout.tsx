@@ -2,7 +2,11 @@ import { FC } from 'react';
 
 import 'src/styles';
 
-const EditorLayout: FC = ({ children }) => {
+export interface EditorLayoutProps {
+  children?: React.ReactNode;
+}
+
+const EditorLayout: FC<EditorLayoutProps> = ({ children }) => {
   return (
     <div className={'w-full'}>
       <span>EditorLayout</span>

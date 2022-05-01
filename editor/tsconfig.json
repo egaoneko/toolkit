@@ -6,7 +6,12 @@
     "declaration": false,
     "jsx": "react-jsx",
     "lib": ["dom", "dom.iterable", "esnext"],
-    "types": ["jest"],
+    "types": ["jest", "@toolkit/util", "@toolkit/shared"],
     "paths": {}
-  }
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "src/types.d.ts"
+  ]
 }
