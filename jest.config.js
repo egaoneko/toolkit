@@ -1,4 +1,5 @@
 module.exports = {
+  testEnvironment: '<rootDir>/config/jest/jest.test-env.js',
   moduleFileExtensions: ['js', 'json', 'ts', 'tsx'],
   roots: ['<rootDir>/src'],
   testRegex: '.*\\.test\\.[tj]sx?$',
@@ -11,7 +12,6 @@ module.exports = {
 
     '^src/(.*)$': '<rootDir>/src/$1',
   },
-  testEnvironment: 'jsdom',
   globals: {
     'ts-jest': {
       diagnostics: true,
