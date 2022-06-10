@@ -32,7 +32,7 @@
     "react-dom": "18.1.0",
     "react-is": "18.1.0",
     "react-transition-group": "4.4.2",
-    "react-use": "17.3.2"
+    "react-use": "17.4.0"
   },
   "devDependencies": {
     "@babel/core": "7.17.10",
