@@ -1,6 +1,6 @@
 import renderer, { ReactTestInstance } from 'react-test-renderer';
 import ReactDOM from 'react-dom';
-import { ReactNode, ReactPortal } from 'react';
+import { ReactNode } from 'react';
 
 import Portal from 'src/components/atoms/utils/Portal/index';
 
@@ -10,7 +10,7 @@ describe('Portal', () => {
     ReactDOM.createPortal = jest.fn((children: ReactNode, container: Element) => {
       portalContainer = container;
       return children;
-    }) as (children: ReactNode, container: Element, key?: null | string) => ReactPortal;
+    }) as typeof ReactDOM.createPortal;
   });
 
   afterEach(() => {

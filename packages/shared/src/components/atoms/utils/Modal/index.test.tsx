@@ -1,6 +1,6 @@
 import renderer from 'react-test-renderer';
 import ReactDOM from 'react-dom';
-import { ReactNode, ReactPortal } from 'react';
+import { ReactNode } from 'react';
 
 import Modal from 'src/components/atoms/utils/Modal/index';
 
@@ -10,7 +10,7 @@ describe('Modal Snapshots', () => {
     ReactDOM.createPortal = jest.fn((children: ReactNode, container: Element) => {
       portalContainer = container;
       return children;
-    }) as (children: ReactNode, container: Element, key?: null | string) => ReactPortal;
+    }) as typeof ReactDOM.createPortal;
   });
 
   test('renders Modal with default options', async () => {
