@@ -8,11 +8,9 @@ module.exports = {
     '@toolkit/navbar': 'navbar',
   },
   shared: {
-    ...deps,
-    react: { singleton: true, eager: true, requiredVersion: deps.react },
+    react: { singleton: true, requiredVersion: deps.react },
     'react-dom': {
       singleton: true,
-      eager: true,
       requiredVersion: deps['react-dom'],
     },
   },

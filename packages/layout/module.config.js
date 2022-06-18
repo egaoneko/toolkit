@@ -9,11 +9,10 @@ module.exports = {
     './dist/components/EditorLayout': './src/components/EditorLayout',
   },
   shared: {
-    ...deps,
-    react: { singleton: true, eager: true, requiredVersion: deps.react },
+    '@toolkit/shared': { singleton: true, requiredVersion: deps['@toolkit/shared'] },
+    react: { singleton: true, requiredVersion: deps.react },
     'react-dom': {
       singleton: true,
-      eager: true,
       requiredVersion: deps['react-dom'],
     },
   },
