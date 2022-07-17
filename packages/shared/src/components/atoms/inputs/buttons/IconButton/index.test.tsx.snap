@@ -4,7 +4,6 @@ exports[`IconButton Snapshots renders IconButton with class 1`] = `
 <button
   className="button contained medium primary button test"
   disabled={false}
-  onClick={[Function]}
 >
   <svg
     className="svg medium filled"
@@ -26,7 +25,6 @@ exports[`IconButton Snapshots renders IconButton with default options 1`] = `
 <button
   className="button contained medium primary button"
   disabled={false}
-  onClick={[Function]}
 >
   <svg
     className="svg medium filled"

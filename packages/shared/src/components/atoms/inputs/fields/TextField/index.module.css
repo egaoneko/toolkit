@@ -1,0 +1,184 @@
+.wrapper {
+  @apply w-full;
+}
+
+.container {
+  @apply relative flex items-center gap-2;
+  @apply box-border overflow-hidden select-none;
+  @apply border-b;
+
+  &.doubleExtraSmall {
+    @apply py-1.5 px-3 gap-1;
+  }
+
+  &.extraSmall {
+    @apply py-2 px-4 gap-1.5;
+  }
+
+  &.small {
+    @apply py-2.5 px-5 gap-2;
+  }
+
+  &.medium {
+    @apply py-3 px-6 gap-2.5;
+  }
+
+  &.large {
+    @apply py-3.5 px-7 gap-3;
+  }
+
+  &.extraLarge {
+    @apply py-4 px-8 gap-3.5;
+  }
+
+  &.doubleExtraLarge {
+    @apply py-5 px-10 gap-4;
+  }
+
+  &.rounded {
+    @apply rounded-full;
+  }
+
+  &.disabled {
+    @apply opacity-30;
+  }
+}
+
+.input {
+  @apply min-w-0 flex-1;
+  @apply bg-transparent focus:outline-none;
+
+  .doubleExtraSmall & {
+    @apply text-xs;
+  }
+
+  .extraSmall & {
+    @apply text-sm;
+  }
+
+  .small & {
+    @apply text-lg;
+  }
+
+  .medium & {
+    @apply text-2xl;
+  }
+
+  .large & {
+    @apply text-4xl;
+  }
+
+  .extraLarge & {
+    @apply text-6xl;
+  }
+
+  .doubleExtraLarge & {
+    @apply text-8xl;
+  }
+}
+
+.filled {
+  @apply bg-gray-100 rounded-md shadow;
+
+  &.primary {
+    @apply text-white;
+    @apply bg-bgPrimaryDark hover:bg-bgPrimaryDarker;
+    @apply dark:bg-dark-bgPrimaryDark hover:dark:bg-dark-bgPrimaryDarker;
+  }
+
+  &.secondary {
+    @apply text-white;
+    @apply bg-bgSecondaryDark hover:bg-bgSecondaryDarker;
+    @apply dark:bg-dark-bgSecondaryDark hover:dark:bg-dark-bgSecondaryDarker;
+  }
+
+  &.success {
+    @apply text-white;
+    @apply bg-bgSuccessDark hover:bg-bgSuccessDarker;
+    @apply dark:bg-dark-bgSuccessDark hover:dark:bg-dark-bgSuccessDarker;
+  }
+
+  &.danger {
+    @apply text-white;
+    @apply bg-bgDangerDark hover:bg-bgDangerDarker;
+    @apply dark:bg-dark-bgDangerDark hover:dark:bg-dark-bgDangerDarker;
+  }
+
+  &.warning {
+    @apply text-white;
+    @apply bg-bgWarningDark hover:bg-bgWarningDarker;
+    @apply dark:bg-dark-bgWarningDark hover:dark:bg-dark-bgWarningDarker;
+  }
+
+  &.info {
+    @apply text-white;
+    @apply bg-bgInfoDark hover:bg-bgInfoDarker;
+    @apply dark:bg-dark-bgInfoDark hover:dark:bg-dark-bgInfoDarker;
+  }
+}
+
+.outlined {
+  @apply border rounded-md shadow;
+
+  &.primary {
+    @apply text-textPrimaryDarker border-bgPrimaryDarker hover:bg-bgPrimaryLighter/[0.05];
+    @apply dark:text-dark-textPrimaryDarker dark:border-dark-bgPrimaryDarker hover:dark:bg-dark-bgPrimaryLighter/[0.05];
+  }
+
+  &.secondary {
+    @apply text-textSecondaryDarker border-bgSecondaryDarker hover:bg-bgSecondaryLighter/[0.05];
+    @apply dark:text-dark-textSecondaryDarker dark:border-dark-bgSecondaryDarker hover:dark:bg-dark-bgSecondaryLighter/[0.05];
+  }
+
+  &.success {
+    @apply text-textSuccessDarker border-bgSuccessDarker hover:bg-bgSuccessLighter/[0.05];
+    @apply dark:text-dark-textSuccessDarker dark:border-dark-bgSuccessDarker hover:dark:bg-dark-bgSuccessLighter/[0.05];
+  }
+
+  &.danger {
+    @apply text-textDangerDarker border-bgDangerDarker hover:bg-bgDangerLighter/[0.05];
+    @apply dark:text-dark-textDangerDarker dark:border-dark-bgDangerDarker hover:dark:bg-dark-bgDangerLighter/[0.05];
+  }
+
+  &.warning {
+    @apply text-textWarningDarker border-bgWarningDarker hover:bg-bgWarningLighter/[0.05];
+    @apply dark:text-dark-textWarningDarker dark:border-dark-bgWarningDarker hover:dark:bg-dark-bgWarningLighter/[0.05];
+  }
+
+  &.info {
+    @apply text-textInfoDarker border-bgInfoDarker hover:bg-bgInfoLighter/[0.05];
+    @apply dark:text-dark-textInfoDarker dark:border-dark-bgInfoDarker hover:dark:bg-dark-bgInfoLighter/[0.05];
+  }
+}
+
+.text {
+  &.primary {
+    @apply text-textPrimaryDarker hover:bg-bgPrimaryLight/[0.1];
+    @apply dark:text-dark-textPrimaryDarker hover:dark:bg-dark-bgPrimaryLight/[0.1];
+  }
+
+  &.secondary {
+    @apply text-textSecondaryDarker hover:bg-bgSecondaryLight/[0.1];
+    @apply dark:text-dark-textSecondaryDarker hover:dark:bg-dark-bgSecondaryLight/[0.1];
+  }
+
+  &.success {
+    @apply text-textSuccessDarker hover:bg-bgSuccessLight/[0.1];
+    @apply dark:text-dark-textSuccessDarker hover:dark:bg-dark-bgSuccessLight/[0.1];
+  }
+
+  &.danger {
+    @apply text-textDangerDarker hover:bg-bgDangerLight/[0.1];
+    @apply dark:text-dark-textDangerDarker hover:dark:bg-dark-bgDangerLight/[0.1];
+  }
+
+  &.warning {
+    @apply text-textWarningDarker hover:bg-bgWarningLight/[0.1];
+    @apply dark:text-dark-textWarningDarker hover:dark:bg-dark-bgWarningLight/[0.1];
+  }
+
+  &.info {
+    @apply text-textInfoDarker hover:bg-bgInfoLight/[0.1];
+    @apply dark:text-dark-textInfoDarker hover:dark:bg-dark-bgInfoLight/[0.1];
+  }
+}

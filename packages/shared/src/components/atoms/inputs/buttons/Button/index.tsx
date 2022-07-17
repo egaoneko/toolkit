@@ -1,4 +1,4 @@
-import { ButtonHTMLAttributes, MouseEvent, useCallback, useRef, ReactNode, forwardRef } from 'react';
+import { ButtonHTMLAttributes, useRef, ReactNode, forwardRef } from 'react';
 import clsx from 'clsx';
 import { useForkRef } from '@toolkit/util';
 
@@ -43,7 +43,6 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(function Button(
     groupDirection = ButtonGroupDirection.ROW,
     startIcon,
     endIcon,
-    onClick,
     className,
     children,
     ...props
@@ -52,13 +51,6 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(function Button(
 ) {
   const buttonRef = useRef<HTMLButtonElement>(null);
   const handleRef = useForkRef(buttonRef, ref);
-
-  const handleOnClick = useCallback(
-    (event: MouseEvent<HTMLButtonElement>) => {
-      onClick?.(event);
-    },
-    [onClick],
-  );
 
   return (
     <button
@@ -79,7 +71,6 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(function Button(
         className,
       )}
       disabled={disabled}
-      onClick={handleOnClick}
       {...props}
     >
       {startIcon && <span>{startIcon}</span>}

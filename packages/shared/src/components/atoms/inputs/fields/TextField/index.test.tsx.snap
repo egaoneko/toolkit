@@ -1,0 +1,185 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TextField Snapshots renders TextField with color 1`] = `
+<div
+  className="wrapper"
+>
+  <div
+    className="container medium standard secondary"
+  >
+    <input
+      className="input"
+      disabled={false}
+    />
+  </div>
+</div>
+`;
+
+exports[`TextField Snapshots renders TextField with default 1`] = `
+<div
+  className="wrapper"
+>
+  <div
+    className="container medium standard"
+  >
+    <input
+      className="input"
+      defaultValue="Test"
+      disabled={false}
+    />
+  </div>
+</div>
+`;
+
+exports[`TextField Snapshots renders TextField with default options 1`] = `
+<div
+  className="wrapper"
+>
+  <div
+    className="container medium standard"
+  >
+    <input
+      className="input"
+      disabled={false}
+    />
+  </div>
+</div>
+`;
+
+exports[`TextField Snapshots renders TextField with endIcon 1`] = `
+<div
+  className="wrapper"
+>
+  <div
+    className="container medium standard"
+  >
+    <input
+      className="input"
+      disabled={false}
+    />
+    <span>
+      <svg
+        className="svg medium filled"
+        height="1em"
+        viewBox="0 0 24 24"
+        width="1em"
+      >
+        <path
+          d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"
+        />
+      </svg>
+    </span>
+  </div>
+</div>
+`;
+
+exports[`TextField Snapshots renders TextField with icons 1`] = `
+<div
+  className="wrapper"
+>
+  <div
+    className="container medium standard"
+  >
+    <span>
+      <svg
+        className="svg medium filled"
+        height="1em"
+        viewBox="0 0 24 24"
+        width="1em"
+      >
+        <path
+          d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"
+        />
+      </svg>
+    </span>
+    <input
+      className="input"
+      disabled={false}
+    />
+    <span>
+      <svg
+        className="svg medium filled"
+        height="1em"
+        viewBox="0 0 24 24"
+        width="1em"
+      >
+        <path
+          d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"
+        />
+      </svg>
+    </span>
+  </div>
+</div>
+`;
+
+exports[`TextField Snapshots renders TextField with rounded 1`] = `
+<div
+  className="wrapper"
+>
+  <div
+    className="container medium standard rounded"
+  >
+    <input
+      className="input"
+      disabled={false}
+    />
+  </div>
+</div>
+`;
+
+exports[`TextField Snapshots renders TextField with size 1`] = `
+<div
+  className="wrapper"
+>
+  <div
+    className="container small standard"
+  >
+    <input
+      className="input"
+      disabled={false}
+    />
+  </div>
+</div>
+`;
+
+exports[`TextField Snapshots renders TextField with startIcon 1`] = `
+<div
+  className="wrapper"
+>
+  <div
+    className="container medium standard"
+  >
+    <span>
+      <svg
+        className="svg medium filled"
+        height="1em"
+        viewBox="0 0 24 24"
+        width="1em"
+      >
+        <path
+          d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"
+        />
+      </svg>
+    </span>
+    <input
+      className="input"
+      disabled={false}
+    />
+  </div>
+</div>
+`;
+
+exports[`TextField Snapshots renders TextField with variant 1`] = `
+<div
+  className="wrapper"
+>
+  <div
+    className="container medium standard"
+  >
+    <input
+      className="input"
+      disabled={false}
+    />
+  </div>
+</div>
+`;

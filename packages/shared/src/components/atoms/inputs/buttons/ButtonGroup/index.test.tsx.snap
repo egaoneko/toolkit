@@ -7,7 +7,6 @@ exports[`ButtonGroup Snapshots renders ButtonGroup with column 1`] = `
   <button
     className="button contained medium primary group column"
     disabled={false}
-    onClick={[Function]}
   >
     Test1
     <span
@@ -17,7 +16,6 @@ exports[`ButtonGroup Snapshots renders ButtonGroup with column 1`] = `
   <button
     className="button contained medium primary group column"
     disabled={false}
-    onClick={[Function]}
   >
     Test2
     <span
@@ -34,7 +32,6 @@ exports[`ButtonGroup Snapshots renders ButtonGroup with default options 1`] = `
   <button
     className="button contained medium primary group row"
     disabled={false}
-    onClick={[Function]}
   >
     Test1
     <span
@@ -44,7 +41,6 @@ exports[`ButtonGroup Snapshots renders ButtonGroup with default options 1`] = `
   <button
     className="button contained medium primary group row"
     disabled={false}
-    onClick={[Function]}
   >
     Test2
     <span

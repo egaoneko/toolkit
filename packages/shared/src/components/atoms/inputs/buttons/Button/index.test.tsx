@@ -42,7 +42,7 @@ describe('Button Snapshots', () => {
       </Button>,
     );
     expect(tree.toJSON()).toMatchSnapshot();
-    expect(tree.toTree()?.props.className).toContain('text');
+    expect(tree.toTree()?.props.className).toContain(ButtonVariant.TEXT);
   });
 
   test('renders Button with size', async () => {
@@ -52,7 +52,7 @@ describe('Button Snapshots', () => {
       </Button>,
     );
     expect(tree.toJSON()).toMatchSnapshot();
-    expect(tree.toTree()?.props.className).toContain('small');
+    expect(tree.toTree()?.props.className).toContain(Size.SMALL);
   });
 
   test('renders Button with color', async () => {
@@ -62,7 +62,7 @@ describe('Button Snapshots', () => {
       </Button>,
     );
     expect(tree.toJSON()).toMatchSnapshot();
-    expect(tree.toTree()?.props.className).toContain('secondary');
+    expect(tree.toTree()?.props.className).toContain(Color.SECONDARY);
   });
 
   test('renders Button with rounded', async () => {
